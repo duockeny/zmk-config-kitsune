@@ -3,7 +3,7 @@ manifest:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
     - name: zmkkeyboardkitsune
-      url-base: https://github.com/duockeny/zmk-keyboard-kitsune
+      url-base: https://github.com/duockeny
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
@@ -11,7 +11,7 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: kitsune
+    - name: zmk-keyboard-kitsune
       remote: zmkkeyboardkitsune
       revision: main
   self:
