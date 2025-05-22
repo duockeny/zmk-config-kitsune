@@ -1,6 +1,0 @@
-if BOARD_KITSUNE
-
-config ZMK_KEYBOARD_NAME
-    default "Kitsune"
-
-endif # BOARD_KITSUNE
