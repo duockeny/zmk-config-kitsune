@@ -6,7 +6,7 @@
 
 / {
     model = "Kitsune";
-    compatible = "kitsune,v1", "st,stm32f072";
+    compatible = "kitsune", "st,stm32f072";
 
     chosen {
         zmk,kscan = &kscan0;
