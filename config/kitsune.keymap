@@ -1,3 +1,4 @@
+#undef ZMK_BEHAVIORS_KEEP_ALL 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
@@ -18,7 +19,7 @@
         1 {
             display-name = "Num";
             bindings = <
-                &kp GRAVE &none  &none  &none  &none  &none  &none  &none  &none     &none   &kp MINUS &kp PLUS
+                &kp GRAVE &none  &none  &none  &none  &none  &none  &none  &none     &none   &kp MINUS &kp EQUAL
                 &kp CAPS  &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8    &kp N9  &kp N0    &kp ENTER
                 &trans    &none  &none  &none  &none  &none  &none  &none  &kp COMMA &kp DOT &kp SLASH &trans
                 &trans    &trans &trans &trans        &trans        &mo 3  &trans            &trans    &trans
@@ -38,20 +39,20 @@
         3 {
             display-name = "Func";
             bindings = <
-                &trans &none  &none  &none  &none  &none  &none  &none  &none  &none  &kp F11 &kp F12
-                &trans &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &trans
-                &trans &none  &none  &none  &none  &none  &none  &none  &none  &none  &none   &trans
-                &trans &trans &trans &trans        &trans        &trans &trans        &trans  &trans
+                &bootloader &none  &none  &none  &none  &none  &none  &none  &none  &none  &kp F11 &kp F12
+                &trans      &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &studio_unlock
+                &trans      &none  &none  &none  &none  &none  &none  &none  &none  &none  &none   &trans
+                &trans      &trans &trans &trans        &trans        &trans &trans        &trans  &trans
             >;
         };
 
         4 {
             display-name = "Util";
             bindings = <
-                &bootloader &none  &none  &none  &none  &none  &none  &kp HOME &kp UP   &kp PG_UP &none  &kp DEL 
-                &trans      &none  &none  &none  &none  &none  &none  &kp LEFT &kp DOWN &kp RIGHT &none  &kp ENTER
-                &trans      &none  &none  &none  &none  &none  &none  &kp END  &none    &kp PG_DN &none  &trans
-                &trans      &trans &trans &mo 3         &trans        &trans   &trans             &trans &trans
+                &trans &none  &none  &none  &none  &none  &none  &kp HOME &kp UP   &kp PG_UP &none  &kp DEL 
+                &trans &none  &none  &none  &none  &none  &none  &kp LEFT &kp DOWN &kp RIGHT &none  &kp ENTER
+                &trans &none  &none  &none  &none  &none  &none  &kp END  &none    &kp PG_DN &none  &trans
+                &trans &trans &trans &trans        &trans        &trans   &trans             &trans &trans
             >;
         };
 
@@ -65,14 +66,6 @@
 
 
         7 {
-            status = "reserved";
-        };
-
-        8 {
-            status = "reserved";
-        };
-
-        9 {
             status = "reserved";
         };
     };
