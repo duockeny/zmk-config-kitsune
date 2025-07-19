@@ -62,7 +62,7 @@
                 &trans &none  &none  &none  &none &none  &none &kp HOME &kp UP   &kp PG_UP &none  &kp DEL
                 &trans &none  &none  &none  &none &none  &none &kp LEFT &kp DOWN &kp RIGHT &none  &kp ENTER
                 &trans &none  &none  &none  &none &none  &none &kp END  &none    &kp PG_DN &none  &trans
-                &trans &trans &trans &trans       &trans       &trans   &trans             &trans &trans
+                &trans &trans &trans &tog 5       &trans       &mo 6    &trans             &trans &trans
             >;
         };
 
@@ -77,10 +77,10 @@
 
         6 {
             bindings = <
-                &trans &none  &none  &none  &none &none  &none &none  &kp C_VOL_UP &kp C_PREV &kp C_NEXT &kp C_PP
-                &trans &none  &none  &none  &none &none  &none &none  &kp C_VOL_DN &kp C_MUTE &none      &trans
-                &trans &none  &none  &none  &none &none  &none &none  &none        &none      &none      &trans
-                &trans &trans &trans &trans       &trans       &trans &trans                  &trans     &trans
+                &trans &none  &none  &none  &none &none  &none &kp C_BR_UP &kp C_VOL_UP &kp C_PREV &kp C_NEXT &kp C_PP
+                &trans &none  &none  &none  &none &none  &none &kp C_BR_DN &kp C_VOL_DN &kp C_MUTE &none      &trans
+                &trans &none  &none  &none  &none &none  &none &none       &none        &none      &none      &trans
+                &trans &trans &trans &trans       &trans       &trans      &trans                  &trans     &trans
             >;
         };
 
